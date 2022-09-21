@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MenuConexiones" android:background="@color/white">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/fondo" android:id="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/textView4"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+            android:text="@string/conexiones"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/textView4"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:textSize="20sp" android:textAlignment="center"
+            android:textColor="@color/chapingoPrimaryDark" android:background="@color/chapingoAccent"
+            android:elevation="10dp" android:padding="5dp" android:fontFamily="sans-serif-black"
+    />
+    <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp" app:srcCompat="@drawable/wifi_ico" android:id="@+id/imageButton3"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/rounded_button2" app:layout_constraintTop_toTopOf="@+id/imageView4"/>
+    <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp" app:srcCompat="@drawable/bt_ico" android:id="@+id/imageButton4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+            android:background="@drawable/rounded_button2"
+            android:onClick="onClickBluetooth" app:layout_constraintTop_toTopOf="@+id/imageView4"/>
+    <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp" app:srcCompat="@drawable/gsm_ico" android:id="@+id/imageButton5"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/rounded_button2"/>
+    <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp" app:srcCompat="@drawable/exit_ico" android:id="@+id/imageButton6"
+            app:layout_constraintStart_toEndOf="@+id/imageButton5"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton5" android:scaleType="fitCenter"
+            android:onClick="onClickExit"
+            android:background="@color/white" app:layout_constraintHorizontal_bias="0.652"
+            app:layout_constraintVertical_bias="0.569"/>
+    <TextView
+            android:text="@string/bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton4" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:textColor="@color/chapingoAccent"
+            android:textSize="16sp" android:fontFamily="sans-serif-medium"/>
+    <TextView
+            android:text="@string/wireless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton3" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:textColor="@color/chapingoAccent"
+            android:textSize="16sp" android:fontFamily="sans-serif-medium"/>
+    <TextView
+            android:text="@string/gsm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton5" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:textColor="@color/chapingoAccent"
+            android:textSize="16sp" android:fontFamily="sans-serif-medium"/>
+    <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp" app:srcCompat="@drawable/logo" android:id="@+id/imageView5"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4" app:layout_constraintStart_toStartOf="parent"
+            android:scaleType="centerCrop"/>
+</android.support.constraint.ConstraintLayout>

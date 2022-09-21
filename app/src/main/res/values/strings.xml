@@ -1,0 +1,19 @@
+<resources>
+    <string-array name="temporizador">
+        <item>1 minuto</item>
+        <item>2 minutos</item>
+        <item>3 minutos</item>
+        <item>4 minutos</item>
+    </string-array>
+    <string name="app_name">MetzabokApp</string>
+    <string name="mode_bt">Modo Bluetooth</string>
+    <string name="temp_btn">Iniciar</string>
+    <string name="version">versión 0.1</string>
+    <string name="activado">ACTIVADO</string>
+    <string name="desactivado">OFF</string>
+    <string name="vinculados">DISPOSITIVOS VINCULADOS</string>
+    <string name="conexiones">TIPO DE CONEXIÓN</string>
+    <string name="bluetooth">BLUETOOTH</string>
+    <string name="wireless">WIRELESS</string>
+    <string name="gsm">GSM</string>
+</resources>
